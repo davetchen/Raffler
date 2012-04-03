@@ -1,7 +1,10 @@
+
+http://evening-fog-7119.herokuapp.com/
+
 4/2/2012 dtc
 ============
 A simple application showing use of the "backbone-on-rails" Gem.
-RailsCasts #325
+RailsCasts #323 and #325
 
 > rvm 1.9.3-p125@rails321
 > rails new raffler
@@ -24,3 +27,9 @@ Get ready to push to heroku...
 > git init
 > gem install heroku
 > heroku accounts:set personal
+
+> heroku create --stack cedar
+http://evening-fog-7119.herokuapp.com/ | git@heroku.com:evening-fog-7119.git
+
+> git push heroku master
+> heroku run rake db:migrate
